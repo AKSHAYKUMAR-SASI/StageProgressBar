@@ -5,6 +5,7 @@ plugins {
     id("maven-publish")
 }
 
+
 android {
     namespace = "com.example.myapplication"
     compileSdk = 34

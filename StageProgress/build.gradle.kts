@@ -2,6 +2,17 @@ plugins {
     alias(libs.plugins.android.library)
     id("maven-publish")
 }
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("stageProgressBarRelease") {
+                groupId = "io.github.AKSHAYKUMAR-SASI"
+                artifactId = "StageProgressBar"
+                version = "1.0.4"
+            }
+        }
+    }
+}
 
 android {
     namespace = "com.akshay.stageprogress"
